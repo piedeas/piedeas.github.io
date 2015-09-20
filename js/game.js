@@ -30,7 +30,7 @@ window.onload = function() {
     setup(game);
 
     // Setup Map
-    map.image = game.assets['map/map1.gif'];
+    map.image = game.assets['res/map1.gif'];
     map.loadData(baseMap);
 
     game.onload = function() {
@@ -38,7 +38,7 @@ window.onload = function() {
         var scene = new Scene();
         var label = new Label("Game Started!");
         var sprite = new Sprite(32,32);
-        sprite.image = game.assets['map/chara1.png'];
+        sprite.image = game.assets['res/chara1.png'];
         scene.addChild(sprite);
 
         var up = false;
@@ -76,8 +76,8 @@ window.onload = function() {
 function preload(game) {
     game.preload('res/BG.png');
 
-    game.preload('map/chara1.png');
-    game.preload('map/map1.gif');
+    game.preload('res/chara1.png');
+    game.preload('res/map1.gif');
 
     // THESE ARE HERE FOR A LONGER LOADING BAR
     game.preload('res/BG1.png');
