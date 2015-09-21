@@ -1,14 +1,33 @@
-.header {
-    font-size: 24px; 
+body {
+    margin: 0;
+}
+
+.main-header {
+    height: 120px;
+    background-color: grey;
+}
+.main-header .logo {
+    height: 80px;
+    width: 100%;
+    text-align: center;
+    font-size: 60px;
+    color: darkgreen;
+    font-family: sans-serif;
     font-weight: bold;
-    width: 165px;
-    margin: 0 auto;
+    padding-top: 25px;
 }
-.spinner img{
-    height: 500px;
-    width: 500px;
-}
-.spinner {
+#enchant-stage {
     margin: 0 auto;
-    width: 500px;
+    margin-top: 30px;
+    border: 1px solid black;
+}
+
+@media screen and (max-width: 767px) {
+    .main-header {
+        height: 60px;
+    }
+    .main-header .logo {
+      font-size: 50px;
+      padding-top: 0;
+    }
 }

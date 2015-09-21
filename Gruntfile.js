@@ -27,6 +27,7 @@ module.exports = function(grunt) {
 
   grunt.loadTasks('grunt-tasks');
 
-  grunt.registerTask('default', ['uglify']);
+  grunt.registerTask('default', ['uglify', 'cssmin']);
+  //grunt.registerTask('default', ['uglify', 'sass', 'cssmin']);
   //grunt.registerTask('test', ['requirejs', 'uglify', 'sass', 'cssmin']);
 };
